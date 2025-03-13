@@ -11,16 +11,22 @@
             margin: 0;
         }
         header {
-            background-color: #f4f4f4;
+/*             background-color: #f4f4f4;
             position: fixed;
             height: 70px;
             width: 100%;
-            text-align: right;
-        }
-        .header-center {
+            text-align: right; */
+            display: flex; /* Enables flexbox */
+            justify-content: space-between; /* Puts text on opposite sides */
+            align-items: center; /* Aligns text vertically */
+            width: 100%; /* Full width */
+            padding: 20px;
             margin-left: 50px;
-            text-align: center;
         }
+/*         .header-center {
+            
+            text-align: center;
+        } */
         .sidebar {
             width: 230px;
             background: #f4f4f4;
@@ -84,7 +90,7 @@
 </head>
 <body>
     <header>
-        <h2 class="header-center">Blueprint Redesign</h2>
+        <h2>Blueprint Redesign</h2>
         <h3>✮ nophar shalom ✮</h3>
     </header>
 
