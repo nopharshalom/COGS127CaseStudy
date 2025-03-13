@@ -21,16 +21,27 @@
             padding: 20px;
             display: flex;
         } */
+        /* Basic styling for header */
         header {
-            font-family: 'Eight One', sans-serif; /* Choose a good font */
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             padding: 20px;
-            text-align: center; /* Center the content inside the header */
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0; /* Make the header span the full width of the page */
+            z-index: 1000; /* Ensure header stays on top */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 120px; /* Adjust to your desired header height */
         }
         
         .header-title {
-            text-align: right; /* Align the title text to the right */
-            margin-bottom: 10px; /* Add some spacing between the title and content */
+            text-align: right;
+            width: 100%; /* Ensure it spans the full width */
+            margin-bottom: 10px;
         }
         
         .header-info h2 {
@@ -42,6 +53,13 @@
             font-size: 18px;
             margin: 5px 0;
         }
+        
+        /* Content Area Styling */
+        .content {
+            margin-top: 140px; /* Space for the fixed header, ensure it doesn't overlap */
+            padding: 20px;
+        }
+
         .sidebar {
             width: 230px;
             background: #f4f4f4;
@@ -105,12 +123,12 @@
 </head>
 <body>
     <header>
-    <h3 class="header-title">✮ nophar shalom ✮</h3>
-    <div class="header-info">
-        <h2>Blueprint Redesign</h2>
-        <p>A lawyer document library</p>
-    </div>
-</header>
+        <h3 class="header-title">✮ nophar shalom ✮</h3>
+        <div class="header-info">
+            <h2>Blueprint Redesign</h2>
+            <p>A lawyer document library</p>
+        </div>
+    </header>
 
     <main>
         <div class="sidebar">
