@@ -67,7 +67,21 @@
             height: auto;
             border-radius: 8px;
         }
-
+        .flex-container {
+            display: flex;
+            justify-content: space-between; /* Distributes columns evenly */
+            gap: 20px; /* Adds spacing between columns */
+            padding: 20px;
+            background-color: #f4f4f4; /* Light background */
+        }
+        
+        .flex-box {
+            flex: 1; /* Makes each box take up equal space */
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
         h1, h2 {
             font-family: 'Oakside Typeface', sans-serif;
             color: #1F3B4D;
@@ -119,9 +133,35 @@
                     these kinds of files quickly.</p>
                 <div class="image-row">
                 <img src="doclibbefore.png" alt="Introduction Image">
-                <img src="doclibsidebefore.png" alt="Introduction Image">
                 </div>
                 <p><i>image details are blurred for privacy reasons</i></p>
+                <div class="flex-container">
+                <div class="flex-box">
+                    <h3>List-Based Layout Issues</h3>
+                    <ul>
+                        <li>Contracts are displayed in a long, linear list.</li>
+                        <li>Users must scroll extensively to browse contracts.</li>
+                        <li>No clear way to filter or categorize contracts efficiently.</li>
+                    </ul>
+                </div>
+                
+                <div class="flex-box">
+                    <h3>Minimal Contract Descriptions</h3>
+                    <ul>
+                        <li>Contracts lack detailed previews or summaries.</li>
+                        <li>Key details (type, date, key clauses) are not visible.</li>
+                        <li>Users waste time opening irrelevant contracts.</li>
+                    </ul>
+                </div>
+            
+                <div class="flex-box">
+                    <h3>Search Functionality Limitations</h3>
+                    <ul>
+                        <li>Search does not prioritize relevance.</li>
+                        <li>Users rely on trial and error for useful results.</li>
+                        <li>No advanced search filters (keyword, date, clauses).</li>
+                    </ul>
+                </div>
         </div>
         <div id="solution" class="section">
             <h2>solution</h2>
