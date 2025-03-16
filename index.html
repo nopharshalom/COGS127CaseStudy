@@ -7,14 +7,16 @@
     <style>
         @font-face {
             font-family: 'Oakside Typeface';
-            src: url(Oakside.ttf') format('truetype');
+            src: url('Oakside.woff') format('woff'),
+                 url('Oakside.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
     
         @font-face {
             font-family: 'Eight One';
-            src: url(EightOne.ttf') format('truetype');
+            src:    url('EightOne.woff') format('woff'),
+                    url('EightOne.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -42,7 +44,7 @@
             background: #f4f4f4;
             padding: 20px;
             position: fixed;
-            height: 100vh;
+            height: auto;
             overflow-y: auto;
         }
         .sidebar a {
